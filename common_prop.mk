@@ -46,7 +46,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.offload.passthrough=false \
     vendor.audio.offload.track.enable=false \
     vendor.audio.parser.ip.buffer.size=262144 \
-    vendor.audio.safx.pbe.enabled=false \
+    vendor.audio.safx.pbe.enabled=true \
     vendor.audio.snd_card.open.retries=50 \
     vendor.audio.tunnel.encode=false \
     vendor.audio.use.sw.alac.decoder=true \
@@ -162,10 +162,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.high_fps_early_phase_offset_ns=6100000 \
     debug.sf.high_fps_early_gl_phase_offset_ns=9000000 \
     debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
-
-# FIFO scheduling for UI
-PRODUCT_PROPERTY_OVERRIDES += \
-    sys.use_fifo_ui=1
 
 # Fling
 PRODUCT_PROPERTY_OVERRIDES += \
